@@ -1,0 +1,262 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  line-height: 1.75;
+}
+
+/* Resets all anchor styling */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #d9f7fc;
+}
+
+/* ------- header section --------- */
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #000000;
+  background-color: #020e75;
+  color: #ffffff;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav li {
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+nav li:hover {
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+/* --- main ----- */
+main {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+/* -------- banner section ---------- */
+.bannerWrap {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  border: 0.1rem solid #020e75;
+  column-gap: 1rem;
+  background-color: #edefff;
+  box-shadow: 0.5rem 0.5rem #020e75;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+#banner:hover {
+  border-top: none;
+  border-left: none;
+}
+
+#banner img {
+  grid-column: 1 / 2;
+  grid-row: 2 /3;
+  min-width: 5em;
+  max-width: 10em;
+  border-bottom: 0.1rem solid #020e75;
+  border-right: 0.1rem solid #020e75;
+  border-radius: 1rem;
+}
+
+.heading1 {
+  grid-column: 2 / 3 ;
+  grid-row: 2 /3;
+  text-align: center;
+}
+
+.heading1 h1 {
+  font-size: 2em;
+}
+
+/* --- about section --- */
+#aboutWrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  padding: 5%;
+  border: 0.1rem solid #000000;
+  box-shadow: 0.5rem 0.5rem #020e75;
+  border-radius: 2rem;
+  background-color: #edefff;
+}
+
+.about p {
+  padding-left: 5%;
+  text-align: justify;
+}
+
+/* --- projects section --- */
+#projectsWrapper {
+  padding-top: 15%;
+}
+
+.projects {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  column-gap: 2rem;
+}
+
+.projects li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 30rem;
+}
+
+.project {
+  background-color: #edefff;
+  border: 0.1rem solid #020e75;
+  box-shadow: 0.5rem 0.5rem #020e75;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-rows: 1fr 50vh 4fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.project h3 {
+  grid-row: 1 / 2;
+  margin: 0;
+}
+
+.project img {
+  border: 0.1rem solid #020e75;
+  box-shadow: 0.1rem 0.1rem #020e75;
+  grid-row: 2 / 3;
+  align-self: stretch;
+}
+
+.project p {
+  grid-row: -3 / -2;
+  width: 80%;
+  margin: auto;
+}
+
+.project .icons {
+  grid-row: -2 / -1;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project .icons a {
+  cursor: pointer;
+}
+
+.project .icons a:hover {
+  color: #ffffff;
+}
+
+/* --- footer --- */
+footer {
+  background-color: #020e75;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* removes the images that are meant only to be displayed in desktop version */
+.desktop {
+  display: none;
+}
+
+/* --- Media query for Desktop version --- */
+@media only screen and (min-width: 500px) {
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  /* -- scrollable navbar -- */
+  header {
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header nav {
+    grid-column: 2 / 3;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+  /* projects */
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 60% 20%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .project h3 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .project a img {
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3;
+    align-self: stretch;
+  }
+
+  .project p {
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 1rem;
+  }
+
+  .project .icons {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+}
