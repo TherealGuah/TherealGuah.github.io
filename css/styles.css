@@ -3,28 +3,21 @@
   line-height: 1.75;
 }
 
-/* Resets all anchor styling */
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: inherit;
-  text-decoration: inherit;
-  font-weight: inherit;
+body {
+  background-color: #d9f7fc;
 }
-
-img {
+body img {
   width: 100%;
   height: auto;
 }
-
-ul {
-  list-style-type: none;
-}
-
-body {
-  background-color: #d9f7fc;
+body a,
+body a:link,
+body a:visited,
+body a:hover,
+body a:active {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
 }
 
 /* ------- header section --------- */
@@ -36,20 +29,18 @@ header {
   background-color: #020e75;
   color: #ffffff;
 }
-
-header ul {
+header nav ul {
   display: flex;
   justify-content: space-around;
   padding: 0;
+  list-style-type: none;
 }
-
-nav li {
+header nav ul li {
   text-align: center;
   cursor: pointer;
   color: #ffffff;
 }
-
-nav li:hover {
+header nav ul li:hover {
   border-bottom: 0.1rem solid #ffffff;
 }
 
@@ -59,16 +50,13 @@ main {
   margin: 0 auto;
   margin-top: 1rem;
 }
-
-/* -------- banner section ---------- */
-.bannerWrap {
+main .bannerWrap {
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-#banner {
+main .bannerWrap #banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -80,13 +68,7 @@ main {
   border-radius: 2rem;
   padding: 1rem;
 }
-
-#banner:hover {
-  border-top: none;
-  border-left: none;
-}
-
-#banner img {
+main .bannerWrap #banner img {
   grid-column: 1/2;
   grid-row: 2/3;
   min-width: 5em;
@@ -95,39 +77,33 @@ main {
   border-right: 0.1rem solid #020e75;
   border-radius: 1rem;
 }
-
-.heading1 {
+main .bannerWrap #banner .heading1 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
 }
-
-.heading1 h1 {
+main .bannerWrap #banner .heading1 h1 {
   font-size: 2em;
 }
 
-/* --- about section --- */
 #aboutWrapper {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.about {
+#aboutWrapper .about {
   padding: 5%;
   border: 0.1rem solid #000000;
   box-shadow: 0.5rem 0.5rem #020e75;
   border-radius: 2rem;
   background-color: #edefff;
 }
-
-.about p {
+#aboutWrapper .about p {
   padding-left: 5%;
   text-align: justify;
 }
 
-/* --- projects section --- */
 #projectsWrapper {
   padding-top: 15%;
 }
@@ -139,7 +115,6 @@ main {
   justify-content: space-around;
   column-gap: 2rem;
 }
-
 .projects li {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -157,36 +132,30 @@ main {
   align-items: center;
   justify-content: center;
 }
-
 .project h3 {
   grid-row: 1/2;
   margin: 0;
 }
-
 .project img {
   border: 0.1rem solid #020e75;
   box-shadow: 0.1rem 0.1rem #020e75;
   grid-row: 2/3;
   align-self: stretch;
 }
-
 .project p {
   grid-row: -3/-2;
   width: 80%;
   margin: auto;
 }
-
 .project .icons {
   grid-row: -2/-1;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-
 .project .icons a {
   cursor: pointer;
 }
-
 .project .icons a:hover {
   color: #ffffff;
 }
@@ -197,6 +166,9 @@ footer {
   color: #ffffff;
   display: flex;
   justify-content: space-evenly;
+}
+footer ul {
+  list-style-type: none;
 }
 
 /* removes the images that are meant only to be displayed in desktop version */
