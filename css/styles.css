@@ -162,12 +162,6 @@ footer ul {
 
 /* --- Media query for Desktop version --- */
 @media only screen and (min-width: 500px) {
-  .mobile {
-    display: none;
-  }
-  .desktop {
-    display: block;
-  }
   /* -- scrollable navbar -- */
   header {
     position: fixed;
