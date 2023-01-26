@@ -1,25 +1,24 @@
 *, *::before, *::after {
     box-sizing: border-box;
     line-height: 1.75;
+}
 
-    body {
-        background-color: #676767;
+body {
+    background-color: #676767;
 
-        img {
-            width: 100%;
-            height: auto;
-        }
+    img {
+        width: 100%;
+        height: auto;
+    }
 
-        a,
-        a:link,
-        a:visited,
-        a:hover,
-        a:active {
-            color: inherit;
-            text-decoration: inherit;
-            font-weight: inherit;
-        }
-
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: inherit;
+        text-decoration: inherit;
+        font-weight: inherit;
     }
 
 }
@@ -30,7 +29,7 @@ header {
     margin: 0 auto;
     padding: 1rem;
     border-bottom: 0.1rem solid #000000;
-    background-color: #020e75;
+    //background-color: #020e75;
     color: #ffffff;
 
     nav {
