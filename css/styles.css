@@ -4,7 +4,11 @@
 }
 
 body {
-  background-color: #676767;
+  background-color: #282A3A;
+  color: #FFFFFF;
+  /* ------- header section --------- */
+  /* --- main ----- */
+  /* --- footer --- */
 }
 body img {
   width: 100%;
@@ -19,42 +23,38 @@ body a:active {
   text-decoration: inherit;
   font-weight: inherit;
 }
-
-/* ------- header section --------- */
-header {
+body header {
   width: 100%;
+  height: 15vh;
   margin: 0 auto;
   padding: 1rem;
-  border-bottom: 0.1rem solid #000000;
-  color: #ffffff;
+  background-color: #735F32;
 }
-header nav ul {
+body header nav ul {
   display: flex;
   justify-content: space-around;
   padding: 0;
   list-style-type: none;
 }
-header nav ul li {
+body header nav ul li {
   text-align: center;
   cursor: pointer;
   color: #ffffff;
 }
-header nav ul li:hover {
+body header nav ul li:hover {
   border-bottom: 0.1rem solid #ffffff;
 }
-
-/* --- main ----- */
-main {
+body main {
   width: 80%;
   margin: 1rem auto 0;
 }
-main .bannerWrap {
+body main .bannerWrap {
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-main .bannerWrap #banner {
+body main .bannerWrap #banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -63,29 +63,27 @@ main .bannerWrap #banner {
   box-shadow: 1rem 1rem 3rem 0.125rem #676767;
   padding: 1rem;
 }
-main .bannerWrap #banner img {
+body main .bannerWrap #banner img {
   grid-column: 1/2;
   grid-row: 2/3;
   min-width: 5em;
   max-width: 10em;
 }
-main .bannerWrap #banner .heading1 {
+body main .bannerWrap #banner .heading1 {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
 }
-main .bannerWrap #banner .heading1 h1 {
+body main .bannerWrap #banner .heading1 h1 {
   font-size: 2em;
 }
-
-/* --- footer --- */
-footer {
+body footer {
   background-color: #020e75;
   color: #ffffff;
   display: flex;
   justify-content: space-evenly;
 }
-footer ul {
+body footer ul {
   list-style-type: none;
 }
 

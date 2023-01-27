@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: #676767;
+    background-color: #282A3A;
+    color: #FFFFFF;
 
     img {
         width: 100%;
@@ -21,90 +22,97 @@ body {
         font-weight: inherit;
     }
 
-}
+    /* ------- header section --------- */
+    header {
+        width: 100%;
+        height: 15vh;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: #735F32;
 
-/* ------- header section --------- */
-header {
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-    border-bottom: 0.1rem solid #000000;
-    //background-color: #020e75;
-    color: #ffffff;
+        nav {
+            ul {
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+                list-style-type: none;
 
-    nav {
-        ul {
-            display: flex;
-            justify-content: space-around;
-            padding: 0;
-            list-style-type: none;
+                li {
+                    text-align: center;
+                    cursor: pointer;
+                    color: #ffffff;
+                }
 
-            li {
-                text-align: center;
-                cursor: pointer;
-                color: #ffffff;
-            }
-
-            li:hover {
-                border-bottom: 0.1rem solid #ffffff;
-            }
-        }
-    }
-}
-
-/* --- main ----- */
-main {
-    width: 80%;
-    margin: 1rem auto 0;
-
-    .bannerWrap {
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        #banner {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            justify-items: center;
-            column-gap: 1rem;
-            //background-color: #edefff;
-            box-shadow: 1rem 1rem 3rem 0.125rem #676767;
-            padding: 1rem;
-
-            img {
-                grid-column: 1 / 2;
-                grid-row: 2 /3;
-                min-width: 5em;
-                max-width: 10em;
-            }
-
-            .heading1 {
-                grid-column: 2 / 3 ;
-                grid-row: 2 /3;
-                text-align: center;
-
-                h1 {
-                    font-size: 2em;
+                li:hover {
+                    border-bottom: 0.1rem solid #ffffff;
                 }
             }
         }
     }
-}
 
-/* --- footer --- */
-footer {
-    background-color: #020e75;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-evenly;
+    /* --- main ----- */
+    main {
+        width: 80%;
+        margin: 1rem auto 0;
 
-    ul {
-        list-style-type: none;
+        .bannerWrap {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            #banner {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-items: center;
+                column-gap: 1rem;
+                //background-color: #edefff;
+                box-shadow: 1rem 1rem 3rem 0.125rem #676767;
+                padding: 1rem;
+
+                img {
+                    grid-column: 1 / 2;
+                    grid-row: 2 /3;
+                    min-width: 5em;
+                    max-width: 10em;
+                }
+
+                .heading1 {
+                    grid-column: 2 / 3 ;
+                    grid-row: 2 /3;
+                    text-align: center;
+
+                    h1 {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    /* --- footer --- */
+    footer {
+        background-color: #020e75;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-evenly;
+
+        ul {
+            list-style-type: none;
+        }
+
     }
 
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -188,8 +196,6 @@ footer {
         }
     }
 }
-
-
 
 /* --- Media query for Desktop version --- */
 @media only screen and (min-width: 500px) {
