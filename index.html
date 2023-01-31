@@ -9,141 +9,154 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script defer src="js/index.js"></script>
 </head>
 
 <body>
 <header>
-    <nav>
-        <ul>
-            <li><a href="#aboutWrapper">About</a></li>
-            <li><a href="#projectsWrapper">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+
+    <ul>
+        <li><a href="#aboutWrapper">About</a></li>
+        <li><a href="#projectAnchor">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
 </header>
 
 <main>
 
-    <section class="bannerWrap">
-        <div id="banner">
-                <p>Hello, I'm Pedro!</p>
-                <h1>Welcome to my Portfolio.</h1>
+    <section id="bannerWrap">
+
+        <div class="gridCenter">
+            <h1>
+                <span class="greeting">H</span>
+                <span class="greeting">e</span>
+                <span class="greeting">l</span>
+                <span class="greeting">l</span>
+                <span class="greeting">o</span>
+                <span class="greeting">!</span>
+            </h1>
         </div>
+
+        <div class="gridCenter hidden fromBottom delay1">
+            <h1>I'm <span class="highlight delayMore">Pedro</span>,</h1>
+        </div>
+        <div class="gridCenter hidden delay2">
+            <p><span class="highlight">Software Developer</span> and</p>
+        </div>
+        <div class="gridCenter hidden fromBottom delay3">
+            <h1>Welcome to my <span class="highlight">Portfolio</span>.</h1>
+        </div>
+
     </section>
 
     <section id="aboutWrapper">
-        <div class="about">
+        <div class="about hidden fromSide">
             <h2>About</h2>
-            <p>I'm a former Hospitality Manager, based in Bristol, transitioning into Web Development.</p>
-            <p>I took on learning Web Dev during lockdown and dabbled a bit on ES6 JS, React and Node.js and PostgresSQL.
-            </p>
-            <p>I'm into strategy games/boardgames, miniature modeling long walks and night outs.</p>
+            <p>I took on learning Web Dev during lockdown and am a fresh <a href="https://io-academy.uk/" target="blank_">iO Academy's</a> FullStack Course graduate.</p>
+            <br>
+            <p>I'm into strategy games/boardgames, miniature modeling, long walks and night outs.</p>
         </div>
     </section>
 
     <section id="projectsWrapper">
-        <div>
-            <h2>Projects</h2>
 
-            <ul class="projects">
-
-                <li class="project">
+        <div >
+            <h2 id="projectAnchor">Projects</h2>
+            <ul  class="projects">
+                <li class="project hidden">
                     <h3>Books Collection</h3>
                     <img src="images/collectionApp.jpg" alt="Books collection preview">
                     <p>Collection Application from books I've bought and read, built using PHP and MySQL.</p>
                     <div class="icons">
                         <a href="https://2022-pedron.dev.io-academy.uk/collectionApp/" target="_blank">
-                            <i class="fa-solid fa-up-right-from-square"></i>
+                            <i class="fa-solid fa-up-right-from-square"> | Live</i>
                         </a>
                         <a href="https://github.com/TherealGuah/collectionApp" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github"> | Github</i>
                         </a>
                     </div>
                 </li>
 
-                <li class="project">
+                <li class="project hidden">
                     <h3>Hawk's Maze</h3>
                     <img src="images/hawksMaze.jpg" alt="Hawk's Maze preview">
                     <p>This project was built as part of the first group project of iO Academy's curriculum. Built using vanilla Javascript, HTML and CSS. A fun small project to test our ability to work in AGILE fashion as a group.</p>
                     <div class="icons">
                         <a href="https://dev.io-academy.uk/projects/2022-aug/2022-aug-hawkmaze/index.html" target="_blank">
-                            <i class="fa-solid fa-up-right-from-square"></i>
+                            <i class="fa-solid fa-up-right-from-square"> | Live</i>
                         </a>
                         <a href="https://github.com/iO-Academy/2022-aug-hawkmaze" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github"> | Github</i>
                         </a>
                     </div>
                 </li>
 
-                <li class="project">
+                <li class="project hidden">
                     <h3>Reddit Client</h3>
                     <img src="images/redditClient.jpg" alt="reddit client preview">
                     <p>Project built as part of my Codecademy self development journey during lockdown 2020. Built using React with Redux and consuming a JSON API.</p>
                     <div class="icons">
                         <a href="https://guahredditclient.netlify.app/" target="_blank">
-                            <i class="fa-solid fa-up-right-from-square"></i>
+                            <i class="fa-solid fa-up-right-from-square"> | Live</i>
                         </a>
                         <a href="https://github.com/TherealGuah/reddit_client" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github"> | Github</i>
                         </a>
                     </div>
                 </li>
 
-                <li class="project">
+                <li class="project hidden">
                     <h3>Invoice Application</h3>
                     <img src="images/invoiceApp.jpg" alt="Invoice App preview">
                     <p>Developed during the Front End frameworks part of the iO Academy's curriculum as a group project. Built using React, styled with Bootstrap 4 and consuming a given API with respective relational database.</p>
                     <div class="icons">
                         <a href="https://2022-aug-react-invoice-app.dev.io-academy.uk/" target="_blank">
-                            <i class="fa-solid fa-up-right-from-square"></i>
+                            <i class="fa-solid fa-up-right-from-square"> | Live</i>
                         </a>
                         <a href="https://github.com/iO-Academy/2022-aug-react-invoice-app" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github"> | Github</i>
                         </a>
                     </div>
                 </li>
 
-                <li class="project">
+                <li class="project hidden">
                     <h3>Furniture Shop Backend</h3>
                     <img src="images/furnitureFrontEnd.png" alt="preview">
                     <p>In this project we were given documentation, a Database and a Front end, to follow and build an API with the PHP Slim framework with OOP principles. The Front End hasn't been hosted yet.</p>
                     <div class="icons">
-                        <a href="" target="_blank">
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </a>
                         <a href="https://github.com/iO-Academy/2022-aug-furniture-store-be" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github"> | Github</i>
                         </a>
                     </div>
                 </li>
 
-                <li class="project">
+                <li class="project hidden">
                     <h3>Academy Portal</h3>
-                    <img src="images/academyPortal.jpg" alt="preview">
+                    <img src="images/academyPortal.jpg" alt="Academy Portal preview">
                     <p>Part of iO Academy's curriculum we built upon/resolved bugs from the academy's portal as part of dealing with a legacy project using the Slim framework, building custom validation in Javascript and PHP.</p>
                     <div class="icons">
                         <a href="https://portal.dev.io-academy.uk/" target="_blank">
-                            <i class="fa-solid fa-up-right-from-square"></i>
+                            <i class="fa-solid fa-up-right-from-square"> | Live</i>
                         </a>
                         <a href="https://github.com/iO-Academy/AcademyPortal" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github"> | Github</i>
                         </a>
                     </div>
                 </li>
 
-                <li class="project">
+                <li class="project hidden">
                     <h3>Final Project - OOP Backend</h3>
                     <img src="images/finalProjectFe.jpg" alt="Final Project Front End preview">
                     <p>A RESTful API built to simulate the backend of an order management system for a fictional restaurant.
-                        This was completed as part the Final Project for the iO Academy Full Stack Track course.
-                        Built in PHP with OOP principles, consuming a relational database (MySQL) and with some tests written with PHPunit.
-                        The Live link will direct you to the Front End consuming the API.</p>
+                        iO Academy Full Stack Track course final project.
+                        MVC PHP with OOP principles, consuming a relational database (MySQL) and with some tests written with PHPunit.</p>
                     <div class="icons">
                         <a href="https://stanleys-steaks-fe.2022-richardb.dev.io-academy.uk/" target="_blank">
-                            <i class="fa-solid fa-up-right-from-square"></i>
+                            <i class="fa-solid fa-up-right-from-square"> | Live</i>
                         </a>
                         <a href="https://github.com/Carinav/2022-aug-restaurant-api" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-github"> | Github</i>
                         </a>
                     </div>
                 </li>
@@ -154,15 +167,37 @@
 
 </main>
 
-<footer>
-    <h2 id="contact">Contact</h2>
+<footer id="contact">
+    <h2>Contact:</h2>
+
     <ul>
-        <li>Email: pedrofechado@gmail.com</li>
         <li>
-            <a href="https://github.com/TherealGuah/" target="_blank">GitHub <i class="fa-brands fa-square-github"></i></a>
+            <a href="mailto:pfechadonunes@gmail.com" target="blank_">
+                <i class="fa-solid fa-envelope"></i> | Email
+            </a>
         </li>
-        <li>Date: September 2022</li>
+        <li>
+            <a href="https://github.com/TherealGuah/" target="_blank">
+                <i class="fa-brands fa-square-github"></i> | Git
+            </a>
+        </li>
+        <li>
+            <a href="" target="_blank">
+                <i class="fa-solid fa-phone"></i> | +447775089155
+            </a>
+        </li>
+
     </ul>
+
+    <ul>
+        <li>
+            <a href="./docs/Resume_20.01.23.pdf" download>
+                <i class="fa-regular fa-file"></i> | CV
+            </a>
+        </li>
+        <li>Date: Jan 2023</li>
+    </ul>
+
 </footer>
 </body>
 
