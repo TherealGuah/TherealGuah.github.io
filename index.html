@@ -14,19 +14,20 @@
 
 <body>
 <header>
-
     <ul>
         <li><a href="#aboutWrapper">About</a></li>
         <li><a href="#projectAnchor">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-
+    <div id="backButton">
+        <a href="#bannerWrap">
+            <i class="fa-solid fa-house"></i>
+        </a>
+    </div>
 </header>
 
 <main>
-
     <section id="bannerWrap">
-
         <div class="gridCenter">
             <h1>
                 <span class="greeting">H</span>
@@ -38,16 +39,23 @@
             </h1>
         </div>
 
-        <div class="gridCenter hidden fromBottom delay1">
+        <div class="gridCenter hidden fromBottom delay3s">
             <h1>I'm <span class="highlight delayMore">Pedro</span>,</h1>
         </div>
-        <div class="gridCenter hidden delay2">
+
+        <div class="gridCenter hidden delay5s">
             <p><span class="highlight">Software Developer</span> and</p>
         </div>
-        <div class="gridCenter hidden fromBottom delay3">
+
+        <div class="gridCenter hidden fromBottom delay7s">
             <h1>Welcome to my <span class="highlight">Portfolio</span>.</h1>
         </div>
 
+        <div class="gridCenter hidden fromBottom delay7s highlight">
+            <a href="#aboutWrapper">
+                <i class="fa-solid fa-circle-chevron-down"></i>
+            </a>
+        </div>
     </section>
 
     <section id="aboutWrapper">
@@ -56,6 +64,12 @@
             <p>I took on learning Web Dev during lockdown and am a fresh <a href="https://io-academy.uk/" target="blank_">iO Academy's</a> FullStack Course graduate.</p>
             <br>
             <p>I'm into strategy games/boardgames, miniature modeling, long walks and night outs.</p>
+        </div>
+
+        <div class="hidden fromBottom delay3s">
+            <a href="#projectsWrapper">
+                <i class="fa-solid fa-circle-chevron-down"></i>
+            </a>
         </div>
     </section>
 
@@ -181,21 +195,17 @@
                 <i class="fa-brands fa-square-github"></i> | Git
             </a>
         </li>
-        <li>
-            <a href="" target="_blank">
-                <i class="fa-solid fa-phone"></i> | +447775089155
-            </a>
-        </li>
-
     </ul>
 
     <ul>
         <li>
+            <i class="fa-solid fa-phone"></i> | +447775089155
+        </li>
+        <li>
             <a href="./docs/Resume_20.01.23.pdf" download>
-                <i class="fa-regular fa-file"></i> | CV
+                <i class="fa-solid fa-download"></i> | CV
             </a>
         </li>
-        <li>Date: Jan 2023</li>
     </ul>
 
 </footer>

@@ -86,8 +86,11 @@ body header ul li:hover::before {
 body header ul li:hover::after {
   transition-delay: 0s, 0.3s, 0s;
 }
-body main {
-  /* --- animations --- */
+body header #backButton {
+  position: fixed;
+  display: block;
+  bottom: 3vh;
+  right: 4vh;
 }
 body main .greeting {
   color: transparent;
@@ -155,13 +158,13 @@ body main .show {
   filter: none;
   transform: translateX(0);
 }
-body main .delay1 {
+body main .delay3s {
   transition-delay: 3s;
 }
-body main .delay2 {
+body main .delay5s {
   transition-delay: 5s;
 }
-body main .delay3 {
+body main .delay7s {
   transition-delay: 7s;
 }
 body main .highlight {
@@ -189,8 +192,9 @@ body main #aboutWrapper {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #658864;
   margin-top: 15vh;
 }
@@ -204,7 +208,7 @@ body main #aboutWrapper .about {
 }
 body main #aboutWrapper .about p {
   padding-left: 5%;
-  text-align: justify;
+  text-align: center;
 }
 body main #projectsWrapper {
   width: 80%;
@@ -316,9 +320,7 @@ body footer ul {
   justify-content: space-evenly;
 }
 
-/* --- Media query for Desktop version --- */
 @media only screen and (min-width: 500px) {
-  /* -- scrollable navbar -- */
   header {
     position: fixed;
     z-index: 1;
@@ -328,6 +330,11 @@ body footer ul {
   }
   header ul {
     grid-column: 2/3;
+  }
+  header #backButton {
+    font-size: 2rem;
+    bottom: 5vh;
+    right: 5vh;
   }
 }
 

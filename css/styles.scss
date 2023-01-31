@@ -97,13 +97,15 @@ body {
             }
         }
 
-
-
+        #backButton {
+            position: fixed;
+            display: block;
+            bottom: 3vh;
+            right: 4vh;
+        }
     }
 
     main {
-        /* --- animations --- */
-        // --- Hello! animation
         .greeting {
             color: transparent;
             animation: blur 5s ease-out;
@@ -145,7 +147,6 @@ body {
             100%	{text-shadow:  0 0 100px #000; opacity:0;}
         }
 
-        // --- hidden
         .hidden {
             opacity: 0;
             filter: blur(5px);
@@ -166,13 +167,15 @@ body {
             transform: translateX(0);
         }
 
-        .delay1 {
+        .delay3s {
             transition-delay: 3s;
         }
-        .delay2 {
+
+        .delay5s {
             transition-delay: 5s;
         }
-        .delay3 {
+
+        .delay7s {
             transition-delay: 7s;
         }
 
@@ -201,15 +204,16 @@ body {
             }
         }
 
-        // --- About section
         #aboutWrapper {
             width: 100%;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             background-color: #658864;
             margin-top: 15vh;
+
 
             h2 {
                 font-size: 1.5rem;
@@ -222,7 +226,7 @@ body {
 
                 p {
                     padding-left: 5%;
-                    text-align: justify;
+                    text-align: center;
                 }
             }
         }
@@ -271,7 +275,6 @@ body {
                         grid-row: 2 / 3;
                         align-self: stretch;
                     }
-
 
                     p {
                         grid-row: -3 / -2;
@@ -356,14 +359,10 @@ body {
             flex-direction: column;
             justify-content: space-evenly;
         }
-
     }
 }
 
-/* --- Media query for Desktop version --- */
 @media only screen and (min-width: 500px) {
-
-    /* -- scrollable navbar -- */
     header {
         position: fixed;
         z-index: 1;
@@ -373,6 +372,12 @@ body {
 
         ul {
             grid-column: 2 / 3;
+        }
+        
+        #backButton {
+            font-size: 2rem;
+            bottom: 5vh;
+            right: 5vh;
         }
     }
 }
