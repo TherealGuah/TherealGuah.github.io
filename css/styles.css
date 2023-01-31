@@ -219,8 +219,7 @@ body main #projectsWrapper h2 {
   color: #658864;
 }
 body main #projectsWrapper .projects {
-  margin-top: 10vh;
-  padding: 0;
+  padding: 10vh 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
