@@ -323,17 +323,18 @@ body footer ul {
 }
 
 @media only screen and (min-width: 500px) {
-  header {
+  body header {
     position: fixed;
+    top: 0;
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #DDDDDD;
   }
-  header ul {
+  body header ul {
     grid-column: 2/3;
   }
-  header #backButton {
+  body header #backButton {
     font-size: 2rem;
     bottom: 5vh;
     right: 5vh;
