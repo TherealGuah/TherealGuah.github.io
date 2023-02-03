@@ -247,12 +247,6 @@ body {
                 justify-content: space-around;
                 column-gap: 2rem;
 
-                li {
-                    margin-top: 1rem;
-                    margin-bottom: 1rem;
-                    max-width: 300px;
-                }
-
                 .project {
                     box-shadow: 1rem 1rem 3rem 0.125rem #676767;
                     padding: 1rem;
@@ -261,6 +255,10 @@ body {
                     align-items: center;
                     justify-content: center;
                     min-height: 70vh;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    max-width: 350px;
+                    border-radius: 10px;
 
                     h3 {
                         color: #658864;
@@ -270,7 +268,7 @@ body {
                     }
 
                     img {
-                        width: 85%;
+                        width: 90%;
                         height: auto;
                         margin: 0 auto;
 

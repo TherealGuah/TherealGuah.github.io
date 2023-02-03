@@ -225,11 +225,6 @@ body main #projectsWrapper .projects {
   justify-content: space-around;
   column-gap: 2rem;
 }
-body main #projectsWrapper .projects li {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  max-width: 300px;
-}
 body main #projectsWrapper .projects .project {
   box-shadow: 1rem 1rem 3rem 0.125rem #676767;
   padding: 1rem;
@@ -238,6 +233,10 @@ body main #projectsWrapper .projects .project {
   align-items: center;
   justify-content: center;
   min-height: 70vh;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 350px;
+  border-radius: 10px;
 }
 body main #projectsWrapper .projects .project h3 {
   color: #658864;
@@ -246,7 +245,7 @@ body main #projectsWrapper .projects .project h3 {
   margin: 0;
 }
 body main #projectsWrapper .projects .project img {
-  width: 85%;
+  width: 90%;
   height: auto;
   margin: 0 auto;
   box-shadow: 1rem 1rem 3rem 0.125rem #676767;
