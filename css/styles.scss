@@ -254,7 +254,7 @@ body {
                     grid-template-rows: 1fr 25vh 4fr 1fr;
                     align-items: center;
                     justify-content: center;
-                    min-height: 70vh;
+                    min-height: 80vh;
                     margin-top: 1rem;
                     margin-bottom: 1rem;
                     max-width: 350px;
@@ -265,6 +265,8 @@ body {
                         text-align: center;
                         grid-row: 1 / 2;
                         margin: 0;
+                        font-style: italic;
+                        font-size: 2rem;
                     }
 
                     img {
