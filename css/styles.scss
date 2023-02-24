@@ -108,32 +108,32 @@ body {
     main {
         .greeting {
             color: transparent;
-            animation: blur 4s ease-out;
+            animation: blur 3s ease-out;
         }
 
         .greeting:nth-child(1) {
-            animation-delay: 0.2s;
+            animation-delay: 0.1s;
 
         }
 
         .greeting:nth-child(2) {
-            animation-delay: 0.5s;
+            animation-delay: 0.25s;
         }
 
         .greeting:nth-child(3) {
-            animation-delay: 0.75s;
+            animation-delay: 0.375s;
         }
 
         .greeting:nth-child(4) {
-            animation-delay: 1s;
+            animation-delay: 0.5s;
         }
 
         .greeting:nth-child(5) {
-            animation-delay: 1.25s;
+            animation-delay: 0.625s;
         }
 
         .greeting:nth-child(6) {
-            animation-delay: 1.5s;
+            animation-delay: 0.75s;
         }
 
         @keyframes blur {
@@ -150,7 +150,7 @@ body {
         .hidden {
             opacity: 0;
             filter: blur(5px);
-            transition: all 3s;
+            transition: all 1.5s;
         }
 
         .fromSide {
@@ -168,15 +168,15 @@ body {
         }
 
         .delay3s {
-            transition-delay: 1s;
+            transition-delay: 0.5s;
         }
 
         .delay5s {
-            transition-delay: 1.5s;
+            transition-delay: 0.75s;
         }
 
         .delay7s {
-            transition-delay: 2s;
+            transition-delay: 1s;
         }
 
         .highlight {
